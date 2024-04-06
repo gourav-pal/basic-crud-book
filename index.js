@@ -1,6 +1,6 @@
+require('dotenv').config()
 const express = require('express')
 const app = express()
-const port = 3000
 const temp=require('./index.js')
 let books=[];
 
@@ -82,6 +82,6 @@ app.delete((bookBaseUrl +'/:id'), (req,res)=>{
 
 })
 
-app.listen(port, () => {
-  console.log(`Example app listening on port ${port}`)     
+app.listen(process.env.SERVER_PORT, () => {
+  console.log(`Example app listening on port ${process.env.SERVER_PORT}`)     
 })
