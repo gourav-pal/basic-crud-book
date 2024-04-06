@@ -1,4 +1,4 @@
-require('dotenv').config()
+require('dotenv').config() //used to access env variables
 const express = require('express')
 const app = express()
 const temp=require('./index.js')
